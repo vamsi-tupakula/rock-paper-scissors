@@ -1,0 +1,97 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+
+body{
+    margin: 0;
+}
+
+header .title{
+    margin: 0;
+    padding: .25em 0;
+    font-size: 3em;
+    font-family: 'Akaya Kanadaka', cursive;
+    text-align: center;
+    background: #1c759e;
+}
+
+header .title::selection{
+    background-color: #17d292;
+}
+
+.game-box{
+    margin: 4em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.game-item{
+    width: 15em;
+    height: 12em;
+    border: 2.5px solid black;
+    border-radius: .5em;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.game-item:hover{
+    box-shadow: 0 0 8px #1C759E;
+}
+
+#rock{
+    background-image: url("rock.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#paper{
+    background-image: url("./paper.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#scissor{
+    background-image: url("./scissor.jpg");
+    background-size: 250px 194px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.result-box{
+    width: 80%;
+    height: 15em;
+    border: 2px solid;
+    margin: 0 auto;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 800px){
+    header .title{
+        font-size: 2em;
+        padding: .55em 0;
+    }
+    .game-box{
+        margin: 2em 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .game-item{
+        width: 9em;
+        height: 8em;
+        border: 2px solid black;
+    }
+    .game-item:hover{
+        box-shadow: 0 0 5px #1C759E;
+    }    
+    #scissor{
+        background-size: 193px 158px;
+        background-position: center;
+    }
+    .result-box{
+        height: 7em;
+    }
+}
