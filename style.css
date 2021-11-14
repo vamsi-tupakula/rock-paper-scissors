@@ -17,7 +17,7 @@ header .title{
 }
 
 header .title::selection{
-    background-color: #17d292;
+    background-color: black;
 }
 
 .game-box{
@@ -116,7 +116,7 @@ header .title::selection{
         border: 2px solid black;
     }
     .game-item:hover{
-        box-shadow: 0 0 5px #1C759E;
+        box-shadow: none;
     }    
     #scissor{
         background-size: 193px 158px;
