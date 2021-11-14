@@ -13,6 +13,7 @@ header .title{
     font-family: 'Akaya Kanadaka', cursive;
     text-align: center;
     background: #1c759e;
+    color: white;
 }
 
 header .title::selection{
@@ -61,13 +62,43 @@ header .title::selection{
 
 .result-box{
     width: 80%;
-    height: 15em;
+    padding-bottom: 1.5em;
     border: 2px solid;
     margin: 0 auto;
     max-width: 700px;
     border-radius: 10px;
 }
 
+.result-title{
+    margin: 0;
+    padding: 0.2em 0;
+    padding-left: 1em;
+    border-bottom: 5px solid;
+    font-size: 2em;
+    font-family: 'Segoe UI';
+    font-weight: 700;
+}
+
+.result-flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2em;
+    font-family: 'Segoe UI';
+}
+
+.choice p{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+    font-size: 2em;
+    font-weight: 900;
+}
 
 @media screen and (max-width: 800px){
     header .title{
@@ -90,8 +121,5 @@ header .title::selection{
     #scissor{
         background-size: 193px 158px;
         background-position: center;
-    }
-    .result-box{
-        height: 7em;
     }
 }
