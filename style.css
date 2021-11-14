@@ -122,4 +122,25 @@ header .title::selection{
         background-size: 193px 158px;
         background-position: center;
     }
+    .result-flex{
+        flex-direction: column;
+    }
+    .choice{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .choice p{
+        font-size: .8em;
+        font-weight: 700;
+    }
+    .result-box{
+        padding: 0;
+        margin-bottom: 1em;
+    }
+    .result{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
 }
