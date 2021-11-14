@@ -12,19 +12,19 @@
         <p class="title">Rock Paper Scissors</p>
     </header>
     <div class="game-box">
-        <div id="rock" class="game-item"></div>
-        <div id="paper" class="game-item"></div>
-        <div id="scissor" class="game-item"></div>
+        <div id="rock" class="game-item" onclick="check(this)"></div>
+        <div id="paper" class="game-item" onclick="check(this)"></div>
+        <div id="scissor" class="game-item" onclick="check(this)"></div>
     </div>
     <div class="result-box">
         <p class="result-title">Result</p>
         <div class="result-flex">
             <div class="choice">
-                <p>Your Choice :: ROCK</p>
-                <p>Computer Choice :: PAPER</p>
+                <p id="your_text">Your Choice :: </p>
+                <p id="computer_text">Computer Choice :: </p>
             </div>
             <div class="result">
-                <p>You Won</p>
+                <p></p>
             </div>
         </div>
     </div>
